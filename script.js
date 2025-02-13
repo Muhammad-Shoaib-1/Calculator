@@ -10,17 +10,17 @@ arr.forEach(button => {
 
         if (value === '=') {
             try {
-                string = eval(string); // Evaluate the expression
+                string = eval(string); 
                 input.value = string;
             } catch (e) {
-                input.value = "Error"; // Handle invalid expressions
-                string = ""; // Reset the string
+                input.value = "Error"; 
+                string = ""; 
             }
         } else if (value === 'AC') {
             string = "";
             input.value = string;
         } else if (value === 'DEL') {
-            string = string.slice(0, -1); // Remove last character
+            string = string.slice(0, -1);
             input.value = string;
         } else {
             string += value;
